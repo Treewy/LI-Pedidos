@@ -1,0 +1,11 @@
+-- BUSCA
+
+
+
+
+
+
+
+93bfd522-c8f0-4723-97cc-45099131fa05
+
+http://api.lojaintegrada.com.br/api/v1/pedido/search/?chave_api=93bfd522-c8f0-4723-97cc-45099131fa05&chave_aplicacao=7a7134e1-dfc3-4922-b145-eb8b605171aa

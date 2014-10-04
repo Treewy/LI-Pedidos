@@ -1,0 +1,32 @@
+* { -webkit-tap-highlight-color: rgba(0,0,0,0); }
+body { -webkit-touch-callout: none; -webkit-text-size-adjust: none; -webkit-user-select: none; }
+
+.action-bar h1.title { line-height: 55px; }
+.action-bar .app-icon { vertical-align: middle; }
+.action-bar .app-icon h1.title { line-height: 30px; }
+
+.dialog ul.dialog-actions li a { font-size: 15px; line-height: 55px; }
+.tab-fixed ul.tab-inner li a { font-size: 13px; line-height: 55px; }
+
+/* Login */
+.help .show-help { display: block; color: #FFF; background: #222; padding: 5px; margin: 10px 15px 0; text-align: center; border-bottom: 1px solid #595959; border-radius: 3px; }
+.help .show-help.active { border-bottom-left-radius: 0; border-bottom-right-radius: 0; border-bottom-color: #444; }
+.help .show-help i { vertical-align: middle; }
+.help .help-box { color: #FFF; background: #222; padding: 10px; margin: 0 15px 20px; }
+.help .help-box li { list-style: none; margin-bottom: 10px; padding-top: 10px; border-top: 1px solid #333; font-size: 15px; line-height: 20px; }
+.help .help-box li.last { margin-bottom: -10px; }
+.help .help-box li:first-child { padding-top: 0; border-top: none; }
+.help .help-box img { max-width: 100%; display: block; margin: 10px auto; }
+
+/* Ultimos Pedidos */
+.ultimos-pedidos h3 small, .ultimos-pedidos .total { float: right; }
+.ultimos-pedidos h3 span { display: inline-block; text-overflow: ellipsis; max-width: 70%; overflow: hidden; }
+#ultimosPedidos .loading, #login .loading { text-align: center; padding: 10px; }
+.carregar-mais { margin: 10px 0; text-align: center; }
+
+/* Info Produto */
+.slider + .loading { width: 100%; height: 100%; background: rgba(0,0,0,0.8); position: relative; }
+.slider + .loading img { position: absolute; top: 0; bottom: 0; left: 0; right: 0; margin: auto; }
+#item1 td:first-child { min-width: 135px; }
+#item3 .valor { white-space: nowrap; }
+

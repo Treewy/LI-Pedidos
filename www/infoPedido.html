@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="format-detection" content="telephone=no" />
+    <meta name="msapplication-tap-highlight" content="no" />
+    <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width" />
+    <meta name="mobile-web-app-capable" content="yes">
+    <link rel="shortcut icon" href="icon.png" />
+    <link rel="stylesheet" type="text/css" href="css/holo-dark.min.css" />
+    <link rel="stylesheet" type="text/css" href="css/custom.css" />
+    <title>LI Stats</title>
+  </head>
+  <body>
+    <div id="infoPedido" class="page">
+      <header class="action-bar">
+        <a class="app-icon action up" href="ultimosPedidos.html" data-ignore="true">
+          <i class="icon-up-button"></i>
+          <img src="img/logo-small.png" alt="LI Pedidos" class="title" />
+        </a>
+        <h1 class="title">Dados do Pedidos</h1>
+        <ul class="actions pull-right">
+          <li><a href="javascript:;" id="top-search" class="action" title="Buscar"><i class="icon-search"></i></a></li>
+          <li><a href="javascript:;" id="top-about" class="action" title="Sobre"><i class="icon-information"></i></a></li>
+          <li><a href="javascript:;" id="top-exit" class="action" title="Sair"><i class="icon-cancel"></i></a></li>
+        </ul>
+      </header>
+      <nav class="tab-fixed">
+        <ul class="tab-inner">
+          <li class="active"><a href="#item1" data-ignore="true">Geral</a></li>
+          <li><a href="#item2" data-ignore="true">Cliente</a></li>
+          <li><a href="#item3" data-ignore="true">Produtos</a></li>
+        </ul>
+      </nav>
+      <div class="content">
+        <div class="slider tab-slider">
+          <ul>
+            <li id="item1" class="tab-item active">
+              <div class="inset">
+                <table width="100%">
+                  <tr id="infoNum">
+                    <td>Número Pedido:</td>
+                    <td><strong></strong></td>
+                  </tr>
+                  <tr id="infoSituacao">
+                    <td>Situação:</td>
+                    <td><strong></strong></td>
+                  </tr>
+                  <tr id="infoPag">
+                    <td>Forma Pagamento:</td>
+                    <td><strong></strong></td>
+                  </tr>
+                  <tr id="infoPagId">
+                    <td>Id da Transação:</td>
+                    <td><strong></strong></td>
+                  </tr>
+                  <tr id="infoEnvio">
+                    <td>Forma Envio:</td>
+                    <td><strong></strong></td>
+                  </tr>
+                  <tr id="infoEnvioId">
+                    <td>Código Rastreio:</td>
+                    <td><strong></strong></td>
+                  </tr>
+                  <tr id="infoEnvioValor">
+                    <td>Valor Frete:</td>
+                    <td><strong></strong></td>
+                  </tr>
+                  <tr id="infoValor">
+                    <td>Valor Total:</td>
+                    <td><strong></strong></td>
+                  </tr>
+                  <tr>
+                    <th colspan="2">&nbsp;</th>
+                  </tr>
+                  <tr>
+                    <th colspan="2"><strong>Endereço de Entrega</strong></th>
+                  </tr>
+                  <tr id="infoEndNome">
+                    <td>Nome:</td>
+                    <td><strong></strong></td>
+                  </tr>
+                  <tr id="infoEnd">
+                    <td>Endereço:</td>
+                    <td><strong></strong></td>
+                  </tr>
+                  <tr id="infoCidade">
+                    <td>Cidade:</td>
+                    <td><strong></strong></td>
+                  </tr>
+                  <tr id="infoCep">
+                    <td>CEP:</td>
+                    <td><strong></strong></td>
+                  </tr>
+                </table>
+              </div>
+            </li>
+            <li id="item2" class="tab-item">
+              <div class="inset">
+                <table width="100%">
+                  <tr id="infoNome">
+                    <td>Nome:</td>
+                    <td><strong></strong></td>
+                  </tr>
+                  <tr id="infoCpf">
+                    <td>CPF:</td>
+                    <td><strong></strong></td>
+                  </tr>
+                  <tr id="infoEmail">
+                    <td>Email:</td>
+                    <td><strong></strong></td>
+                  </tr>
+                  <tr id="infoTel1">
+                    <td>Tel. Celular:</td>
+                    <td><strong></strong></td>
+                  </tr>
+                  <tr id="infoTel2">
+                    <td>Tel. Residencial:</td>
+                    <td><strong></strong></td>
+                  </tr>
+                  <tr id="infoNasc">
+                    <td>Data Nascimento:</td>
+                    <td><strong></strong></td>
+                  </tr>
+                  <tr id="infoSexo">
+                    <td>Sexo:</td>
+                    <td><strong></strong></td>
+                  </tr>
+                </table>
+              </div>
+            </li>
+            <li id="item3" class="tab-item">
+              <div class="inset">
+                <table width="100%" id="infoItens">
+                  <tr>
+                    <th>Qtd</th>
+                    <th>Nome</th>
+                    <th>Valor</th>
+                  </tr>
+                </table>
+              </div>
+            </li>
+          </ul>
+        </div>
+        <div class="loading"><img src="img/loading2.gif" alt="Carregando..." /></div>
+      </div>
+      <div class="dialogs">
+        <div id="sobre" class="dialog">
+          <header class="dialog-title-region">
+            <h1 class="title">Sobre</h1>
+          </header>
+          <div class="dialog-content">
+            <p class="inset">Loja Integrada Pedidos v0.2</p>
+          </div>
+          <ul class="dialog-actions">
+            <li><a href="javascript: void(0);" class="dialog-cancel-button">Fechar</a></li>
+            <li><a href="javascript: void(0);" class="dialog-ok-button">Avaliar</a></li>
+          </ul>
+        </div>
+        <div id="search" class="dialog">
+          <header class="dialog-title-region">
+            <h1 class="title">Buscar Pedido</h1>
+          </header>
+          <div class="dialog-content">
+            <p class="inset">
+              <span class="input-pretty"><input type="number" class="input-text" placeholder="Número do Pedido" name="search_num" id="search_num" value="" /></span>
+            </p>
+          </div>
+          <ul class="dialog-actions">
+            <li><a href="javascript: void(0);" class="dialog-ok-button">Buscar</a></li>
+            <li><a href="javascript: void(0);" class="dialog-cancel-button">Fechar</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <script type="text/javascript" charset="utf-8" src="cordova.js"></script>
+    <script src="js/jquery-2.1.1.min.js"></script>
+    <script src="js/fries.min.js"></script>
+    <script src="js/moment.min.js"></script>
+    <script src="js/custom.js"></script>
+    <script>
+      app.initialize();
+    </script>
+  </body>
+</html>
